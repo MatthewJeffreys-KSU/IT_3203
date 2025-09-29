@@ -1,0 +1,101 @@
+body {
+  background-color: DimGray;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: Snow;
+}
+
+th, td {
+  padding: 5px 10px;
+}
+
+tr:nth-child(even) {
+  background-color: Silver;
+}
+
+.homepage-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-content: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.homepage-grid h1 {
+  color: MediumBlue;
+  grid-column: 2 / span 2;
+}
+
+.homepage-grid > div {
+  margin: 20px;
+  background-color: SteelBlue;
+  border-style: solid;
+  border-width: medium;
+  border-color: Black
+}
+
+.homepage-grid a:link {
+  background-color: Silver;
+  text-decoration: none;
+  border-style: solid;
+  border-width: medium;
+  border-color: Blue;
+  padding: 15px;
+  width: 60%;
+  margin: auto;
+}
+
+.homepage-grid a:visited {
+  border-color: Black;
+}
+
+.homepage-grid a:hover {
+  background-color: Snow;
+}
+
+.homepage-grid h2 {
+  color: RoyalBlue;
+}
+
+.homepage-grid p {
+  color: Black;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-content: center;
+  gap: 15px;
+}
+
+.nav-menu {
+  list-style-type: none;
+  background-color: Snow;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  grid-row: 1 / span 2;
+  padding: 10%;
+}
+
+.nav-menu li {
+  margin-bottom: 15px;
+}
+
+.content-area {
+  background-color: LightSlateGray;
+  padding: 5%;
+  border-style: solid;
+  border-width: medium;
+  border-color: Black
+}
+
+.content-area h1 {
+  color: RoyalBlue;
+}
